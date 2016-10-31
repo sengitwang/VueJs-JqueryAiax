@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/vue.js"></script>
+
+</head>
+<body>
+   <div id="app">
+       {{message }}<br>
+       <button v-on:click="showData">测试jquery加载数据</button>
+       <table border="1">
+           <tr v-for="data in datas">
+               <td>{{data.Name}}</td>
+               <td>{{data.Url}}</td>
+               <td>{{data.Country}}</td>
+           </tr>
+       </table>
+   </div>
+
+
+   <script src="js/app.js"></script>
+</body>
+</html>
